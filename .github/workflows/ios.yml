@@ -14,17 +14,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2️⃣ تثبيت Flutter (نسخة ثابتة أفضل من beta)
+      # 2️⃣ تثبيت Flutter (متوافق مع Dart 3.7)
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 3.29.2
+          flutter-version: 3.22.3
 
       # 3️⃣ تنظيف المشروع
       - name: Clean project
         run: flutter clean
 
-      # 4️⃣ حذف مشاكل iOS (Pods + SPM)
+      # 4️⃣ إصلاح مشكلة flutter_lints تلقائيًا
+      - name: Fix flutter_lints version
+        run: |
+          sed -i '' 's/flutter_lints: \^6.0.0/flutter_lints: ^3.0.1/g' pubspec.yaml || true
+
+      # 5️⃣ حذف مشاكل iOS (Pods + SPM)
       - name: Reset iOS build cache
         run: |
           rm -rf ios/Pods
@@ -36,11 +41,11 @@ jobs:
           rm -rf ios/.swiftpm
           rm -rf ios/Package.resolved
 
-      # 5️⃣ تثبيت البكجات (مهم قبل pod install)
+      # 6️⃣ تثبيت البكجات
       - name: Install dependencies
         run: flutter pub get
 
-      # 6️⃣ إجبار CocoaPods (إصلاح مشاكل SPM)
+      # 7️⃣ تثبيت CocoaPods
       - name: Install CocoaPods
         run: |
           cd ios
@@ -48,11 +53,11 @@ jobs:
           pod install --repo-update
           cd ..
 
-      # 7️⃣ بناء التطبيق (بدون توقيع)
+      # 8️⃣ بناء التطبيق بدون توقيع
       - name: Build iOS (no signing)
         run: flutter build ios --release --no-codesign
 
-      # 8️⃣ رفع الناتج
+      # 9️⃣ رفع الناتج
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
