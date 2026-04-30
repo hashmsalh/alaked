@@ -1,25 +1,14 @@
-name: Build iOS IPA
+steps:
+  - name: Checkout
+    uses: actions/checkout@v4
 
-on:
-  push:
-    branches:
-      - main
+  - name: Setup Flutter
+    uses: subosito/flutter-action@v2
+    with:
+      flutter-version: stable
 
-jobs:
-  build:
-    runs-on: macos-latest
+  - name: Install dependencies
+    run: flutter pub get
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: stable
-
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Build iOS
-        run: flutter build ipa --release
+  - name: Build iOS
+    run: flutter build ipa --release
