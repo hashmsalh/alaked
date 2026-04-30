@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "940071839891",
+    "project_id": "stroregps",
+    "storage_bucket": "stroregps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940071839891:android:a94d5cecd0ac9e412ec566",
+        "android_client_info": {
+          "package_name": "com.gpsstore.bx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940071839891-9k7qenrdbi5m7sl8jo3259sv4hsgoa32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gpsstore.bx",
+            "certificate_hash": "f7ace151f6bcb8453bf42dff73ec0d1b228b888b"
+          }
+        },
+        {
+          "client_id": "940071839891-hpfv2smpb091jgqojfodr51so3f71eni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gpsstore.bx",
+            "certificate_hash": "74677a54610a96d275941f0fe66a1b57be36a1a7"
+          }
+        },
+        {
+          "client_id": "940071839891-v01c2cgeo9o1cgipj356ak9p89s7a7ma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gpsstore.bx",
+            "certificate_hash": "b1bdff76e1ac0b79f4d718d82671f4ad073f38e6"
+          }
+        },
+        {
+          "client_id": "940071839891-4vs46ct9gc75i8k4mg4frlenachm3gml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxO0m7VLujGxRqVTA_1_iw7zqKLh1Q4iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940071839891-4vs46ct9gc75i8k4mg4frlenachm3gml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "940071839891-0hd446mbc21jpha3jvl76etrdscd2nfd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sixamtech.6amMartDelivery"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940071839891:android:9c2b2c4fbc59fd972ec566",
+        "android_client_info": {
+          "package_name": "com.gpsstorebx.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940071839891-4vs46ct9gc75i8k4mg4frlenachm3gml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxO0m7VLujGxRqVTA_1_iw7zqKLh1Q4iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940071839891-4vs46ct9gc75i8k4mg4frlenachm3gml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "940071839891-0hd446mbc21jpha3jvl76etrdscd2nfd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sixamtech.6amMartDelivery"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940071839891:android:151c6210e1be40a32ec566",
+        "android_client_info": {
+          "package_name": "com.sixamtech.sixam_mart_store_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940071839891-4vs46ct9gc75i8k4mg4frlenachm3gml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxO0m7VLujGxRqVTA_1_iw7zqKLh1Q4iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940071839891-4vs46ct9gc75i8k4mg4frlenachm3gml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "940071839891-0hd446mbc21jpha3jvl76etrdscd2nfd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sixamtech.6amMartDelivery"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
